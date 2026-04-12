@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Além do Olhar | Dignidade e Cidadania</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Para Além do Olhar" class="logo-desktop">
+                <img src="logo.png" alt="Logo Para Além do Olhar" class="logo-mobile">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#doacao">Doação</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay">
+                <h1>O que atesta a sua <br>existência?</h1>
+
+                <p class="hero-description top-text">
+                    Milhões de brasileiros vivem <span class="highlight">invisíveis</span>.<br>Sem nome. Sem registro.
+                </p>
+
+                <p class="hero-description main-text">
+                    No papel, você existe. Sem ele, 3 milhões de brasileiros são legalmente invisíveis, sem acesso à saúde, educação ou nome. Eles têm rostos, mas o Estado não os vê.
+                </p>
+
+                <a href="#perdas" class="btn-primary">Descubra a Realidade</a>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <section class="institucional">
+            <p>A cada <strong>1 minuto</strong>, uma criança nasce sem identidade no Brasil. Estamos aqui para mudar essa estatística.</p>
+        </section>
+
+        <section id="perdas" class="perdas">
+            <div class="container">
+                <h2 class="perdas-titulo">O que eles <span class="highlight">perdem?</span></h2>
+
+                <div class="perdas-carrossel">
+                    <div class="perda-card">
+                        <i class="fas fa-heartbeat perda-icon"></i>
+                        <h3 class="perda-subtitulo">Assistência Médica</h3>
+                        <p>Sem identificação, o cidadão perde o acesso a tratamentos pelo SUS, cirurgias e remédios de alto custo.</p>
+                    </div>
+
+                    <div class="perda-card">
+                        <i class="fas fa-graduation-cap perda-icon"></i>
+                        <h3 class="perda-subtitulo">Direito ao Estudo</h3>
+                        <p>Dificuldade em efetuar matrículas escolares e participar de exames nacionais como o ENEM.</p>
+                    </div>
+
+                    <div class="perda-card">
+                        <i class="fas fa-balance-scale perda-icon"></i>
+                        <h3 class="perda-subtitulo">Segurança e Justiça</h3>
+                        <p>Sem identidade, o cidadão perde a proteção da lei, ficando impedido de registrar ocorrências, casar civilmente ou herdar bens da família.</p>
+                    </div>
+
+                    <div class="perda-card">
+                        <i class="fas fa-id-card perda-icon"></i>
+                        <h3 class="perda-subtitulo">Cidadania Plena</h3>
+                        <p>Impedimento de votar, ser votado ou acessar programas de assistência social do governo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="frase-impacto">
+            <div class="container">
+                <p> "Onde o Estado vê números, nós vemos rostos. Nenhuma existência deve ser condenada ao esquecimento. 
+                <span class="block-mobile">Conheça a força que transforma a invisibilidade em pertencimento."</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="quem-somos" class="quem-somos">
+            <h2>Quem somos?</h2>
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="missao">MISSÃO</button>
+                <button class="tab-btn" data-tab="visao">VISÃO</button>
+                <button class="tab-btn" data-tab="valores">VALORES</button>
+                <button class="tab-btn" data-tab="projeto">PROJETO</button>
+            </div>
+            <div class="card-content" id="tab-card">
+                <h3 id="tab-title">Nossa missão</h3>
+                <p id="tab-text">Erradicar a invisibilidade civil através do suporte prático na obtenção de documentos básicos. Acreditamos que o registro é a porta de entrada para a dignidade e cidadania.</p>
+            </div>
+        </section>
+
+        <section id="doacao" class="doacao">
+            <h2>Sua ação transforma <strong>VIDAS</strong></h2>
+    
+            <div class="container-texto">
+                <p class="doacao-texto">
+            O que para muitos é apenas um papel, para outros é o direito de existir, e sua doação atua diretamente na superação das barreiras financeiras que perpetuam a invisibilidade civil. Os recursos são destinados ao custeio de passagens de ônibus e deslocamentos até cartórios ou postos de atendimento, garantindo que a distância física não seja um impedimento, além de cobrir taxas estaduais para emissão de segundas vias e certidões essenciais para quem não se enquadra nos critérios de gratuidade automática. Com esse suporte, financiamos o suporte documental e logístico necessário para que cidadãos em situação de vulnerabilidade possam acessar serviços básicos de saúde, educação e trabalho, transformando o reconhecimento legal em uma porta aberta para a dignidade.
+                </p>
+            </div>
+
+            <div class="qr-container">
+                <p class="qr-titulo"> QR Code para contribuição via PIX
+                </p>
+                <img src="qrcode.png" alt="QR code pix">
+                <p class="pix-email">contato@paraalemdoolhar.org</p>
+                <button class="btn-primary" id="copy-pix">COPIAR CHAVE PIX</button>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h3>Faça parte da mudança</h3>
+            <form id="contact-form">
+                <input type="text" id="user-name" placeholder="Seu nome completo" required>
+                <input type="email" id="user-email" placeholder="seu@email.com" required>
+                <button type="submit" class="btn-primary">ENVIAR MENSAGEM</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Logo Para Além do Olhar">
+            </div>
+            <div class="footer-links">
+                <a href="#home">INÍCIO</a> | 
+                <a href="#quem-somos">QUEM SOMOS</a> | 
+                <a href="#contato">CONTATO</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Para Além do Olhar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

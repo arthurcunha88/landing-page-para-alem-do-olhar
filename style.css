@@ -1,0 +1,436 @@
+/* --- CONFIGURAÇÕES GERAIS E CORES --- */
+:root {
+    --azul-escuro: #1A233E;
+    --amarelo: #FFC107;
+    --branco: #FFFFFF;
+    --cinza-fundo: #F5F5F5;
+    --cinza-borda: #D1D1D1;
+    --texto-placeholder: #999999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--branco);
+    color: var(--azul-escuro);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* --- HEADER --- */
+header {
+    background: var(--branco);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-mobile { display: block; }
+.logo-desktop { display: none; }
+
+.menu-toggle {
+    cursor: pointer;
+    display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--azul-escuro);
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.nav-links { display: none; }
+
+/* --- SEÇÃO HERO --- */
+.hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--branco);
+}
+
+.hero h1 { font-size: 2.2rem; margin-bottom: 25px; line-height: 1.2; }
+.highlight { color: var(--amarelo); font-weight: 700; }
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.hero-description.top-text { margin-bottom: 30px; }
+.hero-description.main-text { margin-bottom: 40px; font-size: 1rem; opacity: 0.9; }
+
+.btn-primary {
+    background-color: var(--amarelo);
+    color: var(--azul-escuro);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+.scroll-arrow { 
+    margin-top: 30px; 
+    font-size: 24px;
+    color: var(--amarelo);
+    animation: bounce 2s infinite; 
+}
+
+/* --- SEÇÃO INSTITUCIONAL --- */
+.institucional { background: var(--azul-escuro); color: var(--branco); }
+
+/* --- SEÇÃO O QUE ELES PERDEM --- */
+.perdas { 
+    background: var(--branco); 
+    width: 100%; 
+}
+
+.perdas-titulo {
+    font-size: 2.2rem;
+    color: var(--azul-escuro);
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.perdas-carrossel {
+    display: flex;
+    flex-direction: column; /* Cards ordenados verticalmente no mobile */
+    gap: 20px;
+    padding: 20px; 
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.perda-card {
+    background: var(--branco);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Largura total no mobile */
+    justify-content: space-between; /* Empurra o ícone para o topo e o texto para baixo uniformemente */
+    flex: 1; /*crescimento uniforme*/
+}
+
+.perda-icon {
+    font-size: 2.5rem;
+    color: var(--amarelo);
+    margin-bottom: 20px;
+}
+
+.perda-subtitulo {
+    font-size: 1.4rem;
+    color: var(--azul-escuro);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* --- SEÇÃO FRASE DE IMPACTO --- */
+.frase-impacto {
+    background-color: var(--branco);
+    padding: 60px 20px;
+}
+
+.frase-impacto p {
+    font-size: 1.4rem;
+    color: var(--azul-escuro);
+    font-weight: 500;
+    font-style: italic;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.frase-impacto p::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--amarelo);
+    margin: 0 auto 20px;
+}
+
+/* --- QUEM SOMOS --- */
+.quem-somos h2 { font-size: 2.2rem; color: var(--azul-escuro); margin-bottom: 20px; }
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 35px 0;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 10px 18px;
+    border: none;
+    background: #E0E0E0;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tab-btn.active { background: var(--amarelo); color: var(--azul-escuro); }
+
+.card-content {
+    background: #EEEEEE;
+    color: var(--azul-escuro);
+    padding: 35px 25px;
+    border-radius: 16px;
+    max-width: 550px;
+    margin: 0 auto;
+    transition: opacity 0.3s ease; 
+}
+
+/* --- DOAÇÃO --- */
+.doacao { background: var(--cinza-fundo); }
+
+.doacao h2 {
+    margin-bottom: 30px;
+}
+
+.qr-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+
+/* Container que agrupa tudo da doação */
+.qr-container { 
+    margin: 30px auto 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--branco); /* Dá um destaque leve */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sombra suave */
+    max-width: 500px; /* Evita que o texto espalhe demais */
+}
+
+.doacao-texto {
+    font-size: 1.1rem;
+    color: var(--azul-escuro);
+    max-width: 700px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.qr-container img { 
+    width: 200px; 
+    height: 200px;
+    border: 2px solid var(--cinza-fundo);
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.qr-container img:hover {
+    transform: scale(1.05); /* Efeito sutil ao passar o mouse */
+}
+
+/* E-mail do PIX */
+.pix-email {
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    background: var(--cinza-fundo);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-family: monospace; /* Estilo de código/chave */
+}
+
+/* Botão de Copiar */
+#copy-pix {
+    width: 100%; /* Botão largo no mobile fica mais fácil de clicar */
+    max-width: 300px;
+    letter-spacing: 1px;
+}
+
+/* --- CONTATO --- */
+form { display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 450px; margin: 30px auto 0; }
+
+input {
+    height: 52px;
+    padding: 0 16px;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 8px;
+    outline: none;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-links a { 
+    color: var(--branco); 
+    text-decoration: none; 
+    margin: 0 10px; 
+    font-weight: 600;
+}
+.footer-links a:hover { color: var(--amarelo); }
+
+.footer-logo img {
+    height: 85px; 
+    width: auto;
+    background: var(--branco);
+    padding: 10px;
+    border-radius: 16px;
+}
+
+/* --- ANIMAÇÕES --- */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+}
+
+/* --- RESPONSIVIDADE INTEGRAL --- */
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .logo-desktop { display: none; }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--branco);
+        padding: 30px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        list-style: none;
+        gap: 20px;
+        z-index: 999;
+        text-align: center;
+    }
+
+    .nav-links.active { display: flex !important; }
+
+    .nav-links a {
+        color: var(--azul-escuro);
+        text-decoration: none;
+        font-weight: 700;
+        display: block;
+        width: 100%;
+    }
+
+    .hero h1 { font-size: 1.8rem; padding: 0 10px; }
+    
+    .perdas-titulo { 
+        font-size: 1.8rem; 
+        padding: 0 20px; 
+    }
+    
+    section { padding: 60px 15px; }
+}
+
+/* DESKTOP (Restaurado conforme solicitado) */
+@media (min-width: 768px) {
+    .logo-mobile { display: none; }
+    .logo-desktop { display: block; }
+    .menu-toggle { display: none; }
+    
+    .nav-links { 
+        display: flex !important; 
+        position: static; 
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        flex-direction: row;
+        gap: 35px;
+        list-style: none;
+    }
+
+    .nav-links a { text-decoration: none; color: var(--azul-escuro); font-weight: 700; }
+    .hero h1 { font-size: 3.5rem; }
+
+    .perdas-carrossel {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        justify-content: center; 
+        overflow: hidden;
+        gap: 25px;
+        padding: 40px 20px;
+    }
+
+    .perda-card {
+        width: 100%;
+        min-width: unset;
+        height: 100%; 
+    }
+}
