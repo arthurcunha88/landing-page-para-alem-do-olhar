@@ -25,13 +25,13 @@ const tabTitle = document.getElementById('tab-title');
 const tabText = document.getElementById('tab-text');
 
 buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', () => { //interações ao clicar (ativo x inativo)
         buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
 
         if(card) card.style.opacity = 0;
         
-        setTimeout(() => {
+        setTimeout(() => { //altera ao clicar no botao de forma suave, com 0,2ms
             const data = tabData[btn.dataset.tab];
             if(tabTitle) tabTitle.innerText = data.title;
             if(tabText) tabText.innerText = data.text;
@@ -45,13 +45,13 @@ const copyBtn = document.getElementById('copy-pix');
 const chavePix = "contato@paraalemdoolhar.org";
 
 if(copyBtn) {
-    copyBtn.addEventListener('click', () => {
+    copyBtn.addEventListener('click', () => { //com o clique muda a informação e fica verde
         navigator.clipboard.writeText(chavePix).then(() => {
             const originalText = copyBtn.innerText;
             copyBtn.innerText = "CHAVE COPIADA!";
             copyBtn.style.backgroundColor = "#4CAF50";
             
-            setTimeout(() => {
+            setTimeout(() => { //com o tempo volta ao amarelo padrao
                 copyBtn.innerText = originalText;
                 copyBtn.style.backgroundColor = "var(--amarelo)";
             }, 2000);
@@ -64,7 +64,7 @@ const menuToggle = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
 if(menuToggle) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', () => { //ativar/desativar menu
         navLinks.classList.toggle('active');
     });
 }
@@ -90,6 +90,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+//o scroll tem um mecanismo para direcionar a partir dos cliques nos links da pagina uma exepreiencia decente para o usuario
+//ao definir a altura do header como 70, consigo fazer com que o usuario nao sofra com direcionamentos que bloqueiem sua visao do site, com o menu o atrapalhando, por exemplo
+//alem desse direcionamento ser suave
 
 // formulário
 const contactForm = document.getElementById('contact-form');
@@ -97,7 +100,7 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        const formURL = "https://forms.gle/7XtFqgqWceSahvfU9";
+        const formURL = "https://forms.gle/7XtFqgqWceSahvfU9"; //leva ao formulario externo do forms, ao preencher o faça parte da mudança na propria landpg
         window.open(formURL, '_blank');
         contactForm.reset();
     });
