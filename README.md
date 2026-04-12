@@ -1,6 +1,6 @@
 # Projeto: Para Além do Olhar - Landing Page
 
-Esta é uma landing page temática desenvolvida para a campanha de conscientização sobre a **Invisibilidade Civil** e o direito fundamental à documentação básica no Brasil. O projeto foi construído do zero como parte de um desafio técnico para o **Clube de Programação do SENAI CIMATEC**, unindo impacto social, design responsivo e funcionalidades interativas.
+Esta é uma landing page temática desenvolvida para a campanha de conscientização sobre a **Invisibilidade Civil** e o direito fundamental à documentação básica no Brasil. O projeto foi construído do zero para a etapa técnica do PROSEL 2026.1 da CIMATEC JR., unindo impacto social, design responsivo e funcionalidades interativas.
 
 A página apresenta a realidade de brasileiros sem registro civil, detalha as perdas sociais envolvidas e oferece canais de apoio, com foco em uma experiência de usuário fluida e informativa.
 
