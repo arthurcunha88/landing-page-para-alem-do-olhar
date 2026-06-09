@@ -6,6 +6,12 @@ A página apresenta a realidade de brasileiros sem registro civil, detalha as pe
 
 ---
 
+## Demonstração Visual
+Visualização da seção inicial da Landing Page:
+![Interface da Landing Page](imagens-png/preview.png)
+
+---
+
 ## Informações do Candidato
 * **Nome:** Arthur Andrade Cunha
 * **Instituição:** Centro Universitário SENAI CIMATEC
@@ -21,6 +27,22 @@ Este projeto é uma aplicação web estática, portanto, basta um navegador para
 2. Certifique-se de que os arquivos de código e a pasta de imagens estão no mesmo diretório.
 3. Abra o arquivo `index.html` no seu navegador de preferência.
 
+---
+
+## Estrutura de Pastas e Arquivos
+Organização dos diretórios do repositório:
+
+```text
+📁 landing-page-para-alem-do-olhar
+├── 📁 imagens-png
+│   ├── 🖼️ logo.png
+│   └── 🖼️ qrcode.png
+│   └── 🖼️ preview.png
+├── 📄 index.html
+├── 📄 script.js
+├── 📄 style.css
+└── 📄 README.md
+```
 ---
 
 ## Organização do Código
