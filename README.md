@@ -8,6 +8,7 @@ A página apresenta a realidade de brasileiros sem registro civil, detalha as pe
 
 ## Demonstração Visual
 Visualização da seção inicial da Landing Page:
+
 ![Interface da Landing Page](imagens-png/preview.png)
 
 ---
